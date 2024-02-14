@@ -1,0 +1,173 @@
+body {
+    background-color: #383838;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url('/src/imagens/mulher-usando-seu-smartphone-do-lado-de-fora-com-espaco-de-copia.jpg');
+}
+
+.inner { padding: 80px 20px;}
+
+#conteiner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner section {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    max-width: 960px;
+    margin: 30px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px 0 #454545;
+}
+
+#conteiner section article {
+    width: 45%;
+    background-color: #00A36C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner section article h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#conteiner section article p {
+    margin: 3% 0 0 5%;
+    font-size: 20px;
+    color: #fff
+}
+
+#conteiner section article a.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: #fff solid 2px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 4% 0 0 33%;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.2s all ease;
+}
+
+#conteiner section article a.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+#conteiner section aside {
+    width: 55%;
+}
+
+#conteiner section aside h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #282828;
+    font-weight: 700;
+}
+
+#conteiner section aside p {
+    margin: 4% 0 0 22%;
+    font-size: 20px;
+    color: #282828;
+}
+
+#socialLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#socialLogin a {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    box-shadow: 0 2px 5px 0 #454545;
+}
+
+#socialLogin a.google {background-image: url('/src/imagens/google.svg');}
+
+#socialLogin a.github {
+    background-image: url('/src/imagens/github.svg');
+    background-size: 70%;
+}
+
+#socialLogin a.linkedin {
+    background-image: url('/src/imagens/linkedin.svg');
+    background-size: 45%;
+}
+
+form {
+    width: auto;
+    max-width: 250px;
+    margin: 30px auto 0 auto;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=email] {
+    width: calc(100% - 55);
+    border: none;
+    padding: 10px 15px 8px 40px;
+    margin: 8px 0;
+    font-size: 18px;
+    border-radius: 20px;
+    background-position: 3% 50%;
+    background-repeat: no-repeat;
+    background-size: 18px;
+}
+
+form input[type=text] { background-image: url(/src/imagens/user.svg);}
+form input[type=password] { background-image: url(/src/imagens/password.svg);}
+form input[type=email] { background-image: url(/src/imagens/email.svg);}
+
+form button[type=submit] {
+    width: 172px;
+    margin: 20px 0 0 40px;
+    border: #00A36C solid 2px;
+    color: #00A36C;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: 0.2s all ease;
+    box-shadow: 0 2px 5px 0 #454545;
+}
+
+form button[type=submit]:hover {
+    background-color: #00A36C;
+    color: #fff;
+}
+
+@media(max-width: 760px) {
+    #conteiner section {
+        flex-flow: column;
+    }
+
+    #conteiner section article,
+    #conteiner section aside {
+        width: 100%;
+    }
+}
