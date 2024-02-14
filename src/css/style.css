@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url('/src/imagens/mulher-usando-seu-smartphone-do-lado-de-fora-com-espaco-de-copia.jpg');
+    background-image: url('../imagens/mulher-usando-seu-smartphone-do-lado-de-fora-com-espaco-de-copia.jpg');
 }
 
 .inner { padding: 80px 20px;}
@@ -106,15 +106,15 @@ body {
     box-shadow: 0 2px 5px 0 #454545;
 }
 
-#socialLogin a.google {background-image: url('/src/imagens/google.svg');}
+#socialLogin a.google {background-image: url('../imagens/google.svg');}
 
 #socialLogin a.github {
-    background-image: url('/src/imagens/github.svg');
+    background-image: url('../imagens/github.svg');
     background-size: 70%;
 }
 
 #socialLogin a.linkedin {
-    background-image: url('/src/imagens/linkedin.svg');
+    background-image: url('../imagens/linkedin.svg');
     background-size: 45%;
 }
 
@@ -138,12 +138,14 @@ form input[type=email] {
     background-size: 18px;
 }
 
-form input[type=text] { background-image: url('/src/imagens/user.svg');}
-form input[type=password] { background-image: url('/src/imagens/password.svg');}
-form input[type=email] { background-image: url('/src/imagens/email.svg');}
+form input[type=text] { background-image: url('../imagens/user.svg');}
+
+form input[type=password] { background-image: url('../imagens/password.svg');}
+
+form input[type=email] { background-image: url('../imagens/email.svg');}
 
 form button[type=submit] {
-    width: 172px;
+    width: 172  px;
     margin: 20px 0 0 40px;
     border: #00A36C solid 2px;
     color: #00A36C;
